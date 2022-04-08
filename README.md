@@ -15,8 +15,8 @@ $ sudo chmod +x /usr/local/bin/gandi_ddns.py
 
 ```
 [USER_Gandi]
-        modulepath=/usr/local/bin/gandi_ddns.py
-        queryurl=Gandi
+  modulepath=/usr/local/bin/gandi_ddns.py
+  queryurl=Gandi
 ```
 > 注: 自 DSM 7.0 起服务商名称必须以USER_前缀开头。
 
