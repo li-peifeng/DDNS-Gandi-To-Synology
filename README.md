@@ -26,10 +26,8 @@ $ sudo chmod +x /usr/local/bin/gandi_ddns.py
 
 您需要提供以下配置参数：
 
-主机的 FQDN，可使用裸域名或二级域名
+1.主机FQDN，可使用裸域名或二级域名。
 
-用户名
+2.用户名
 
-Gandi API 密钥
-
-[1]: https://api.gandi.net/docs/livedns/
+3.Gandi API 密钥
