@@ -1,22 +1,21 @@
-# Use Gandi LiveDNS from Synology NAS box
+# 添加 Gandi LiveDNS 到 Synology NAS
 
-This project aims to provide a dynamic DNS capability for Synology NAS users that
-use [Gandi.net](https://www.gandi.net/en) domain name registrar. It based on [LiveDNS RESTful API][1].
+此项目旨在为使用Gandi.net域名注册商的 Synology NAS 用户提供动态 DNS 功能。它基于LiveDNS RESTful API。
 
-## Installation
+# Installation
 
-1. Add python3 package to the Synology box
-1. Copy script to `/usr/local/bin/livedns.py` and make it executable
+1. 添加 python3 到 Synology。
+2. 复制脚本到 `/usr/local/bin/gandi_ddns.py` 并添加运行权限。
 ```
-$ sudo curl -o /usr/local/bin/livedns.py https://raw.githubusercontent.com/li-peifeng/gandi-ddns-synology/main/livedns.py
-$ sudo chmod +x /usr/local/bin/livedns.py
+$ sudo curl -o /usr/local/bin/gandi_ddns.py https://raw.githubusercontent.com/li-peifeng/gandi-ddns-synology/main/gandi_ddns.py
+$ sudo chmod +x /usr/local/bin/gandi_ddns.py
 ```
 
-1. update `/etc/ddns_provider.conf` and add a new provider:
+3. 编辑 `/etc/ddns_provider.conf` 添加服务商:
 
 ```
 [USER_Gandi]
-        modulepath=/usr/local/bin/livedns.py
+        modulepath=/usr/local/bin/gandi_ddns.py
         queryurl=Gandi
 ```
 > NOTE: the provide name must start with **`USER_`** prefix (since DSM 7.0)
