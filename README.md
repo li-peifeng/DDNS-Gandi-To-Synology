@@ -19,6 +19,7 @@ $ sudo chmod +x /usr/local/bin/gandi_ddns.py
   queryurl=Gandi
 ```
 > 注: 自 DSM 7.0 起服务商名称必须以USER_前缀开头。
+请注意不要修改`/etc.defaults/ddns_provider.conf`，修改此文件后每次更新dsm都会被系统更新覆盖修改的文件而丢失配置！
 
 现在新的服务商应该可以在`控制面板 -> 外部访问 -> DDNS` 可用。
 
