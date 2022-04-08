@@ -2,7 +2,7 @@
 
 此项目旨在为使用Gandi.net域名注册商的 Synology NAS 用户提供动态 DNS 功能。它基于LiveDNS RESTful API。
 
-# Installation
+# 安装
 
 1. 添加 python3 到 Synology。
 2. 复制脚本到 `/usr/local/bin/gandi_ddns.py` 并添加运行权限。
@@ -18,20 +18,18 @@ $ sudo chmod +x /usr/local/bin/gandi_ddns.py
         modulepath=/usr/local/bin/gandi_ddns.py
         queryurl=Gandi
 ```
-> NOTE: the provide name must start with **`USER_`** prefix (since DSM 7.0)
+> 注: 自 DSM 7.0 起服务商名称必须以USER_前缀开头。
 
-Now on the new provider should be available under `Control Panel -> External Access -> DDNS`
+现在新的服务商应该可以在`控制面板 -> 外部访问 -> DDNS` 可用。
 
-## Configuration
+# 配置
 
-You need to provide the following configuration parameters:
+您需要提供以下配置参数：
 
-1. FQDN of the host
-1. Username, which is ignored
-1. Gandy API key
+主机的 FQDN，可使用裸域名或二级域名
 
-## License
+用户名
 
-This work is published under [public domain](https://creativecommons.org/licenses/publicdomain/) license.
+Gandi API 密钥
 
 [1]: https://api.gandi.net/docs/livedns/
