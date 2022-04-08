@@ -8,7 +8,7 @@ use [Gandi.net](https://www.gandi.net/en) domain name registrar. It based on [Li
 1. Add python3 package to the Synology box
 1. Copy script to `/usr/local/bin/livedns.py` and make it executable
 ```
-$ sudo curl -o /usr/local/bin/livedns.py https://raw.githubusercontent.com/kofemann/livedns4synology/master/livedns.py
+$ sudo curl -o /usr/local/bin/livedns.py https://github.com/li-peifeng/gandi-ddns-synology/blob/gandi/livedns.py
 $ sudo chmod +x /usr/local/bin/livedns.py
 ```
 
