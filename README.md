@@ -1,4 +1,4 @@
-## Installation
+## 安装说明
 1. ssh 连接到nas
 2. 切换到root: `sudo -s`
 3. 安装模块: 
