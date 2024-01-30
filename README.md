@@ -1,5 +1,8 @@
 ## 安装说明
-# 原apikey已经弃用，请使用PAT（Personal Access Token）！
+
+> [!CAUTION]
+> 原apikey已经弃用，请使用PAT（Personal Access Token）！
+
 1. ssh 连接到nas
 2. 切换到root: `sudo -s`
 3. 安装模块: 
