@@ -26,7 +26,7 @@ if (!filter_var($ipv4, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
 
 $url = 'https://api.gandi.net/v5/livedns/domains/' . $fqdn . '/records/' . $rrset_name . '/A';
 $headers = array('Authorization:Bearer ' . $pat, 'Content-Type:application/json');
-$data = '{"rrset_values": ["' . $ipv4 . '"]}';
+$data = '{"rrset_values": ["' . $ipv4 . '"],"rrset_ttl":600}';
 
 $req = curl_init();
 curl_setopt($req, CURLOPT_URL, $url);
