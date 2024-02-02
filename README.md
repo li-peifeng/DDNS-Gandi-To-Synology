@@ -2,7 +2,7 @@
 
 > [!CAUTION]
 > 原apikey已经弃用，请使用PAT（Personal Access Token）！
-
+此脚本默认TTL = 600秒
 1. ssh 连接到 nas
 2. 切换到 root:
 3. ```sudo -s```
