@@ -9,10 +9,10 @@
 2. 切换到 root:
 3. ```sudo -s```
 6. 安装模块:
-7. ```curl -w "\n" https://raw.githubusercontent.com/li-peifeng/Gandi-DDNS-Synology/main/gandi.php > /usr/syno/bin/ddns/gandi.php```
+7. ```curl -w "\n" https://raw.githubusercontent.com/li-peifeng/DDNS-Gandi-To-Synology/main/gandi.php > /usr/syno/bin/ddns/gandi.php```
 8. 设置权限:
 9. ```chmod 755 /usr/syno/bin/ddns/gandi.php```
 12. 添加到服务商菜单:
-13. ```curl -w "\n" https://raw.githubusercontent.com/li-peifeng/Gandi-DDNS-Synology/main/ddns_provider.conf >> /etc.defaults/ddns_provider.conf```
+13. ```curl -w "\n" https://raw.githubusercontent.com/li-peifeng/DDNS-Gandi-To-Synology/main/ddns_provider.conf >> /etc.defaults/ddns_provider.conf```
 16. 配置请参照下图：
-![配置参考](https://github.com/li-peifeng/Gandi-DDNS-Synology/blob/d939f1e043e1c6ac62b010ad0118e1c83f51242f/IMG_0032.jpeg)
+![配置参考](https://github.com/li-peifeng/DDNS-Gandi-To-Synology/blob/d939f1e043e1c6ac62b010ad0118e1c83f51242f/IMG_0032.jpeg)
