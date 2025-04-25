@@ -1,10 +1,13 @@
-## 安装说明
+<p align="center">
+  <a href="https://peifeng.li"><img width="184px" alt="logo" src="https://li-peifeng.github.io/isweet/logo.png" />
+  </a>
+</p>
 
+## 安装说明
 > [!CAUTION]
 > 原apikey已经弃用，请使用PAT（Personal Access Token）！
 
 ### 此脚本默认TTL = 600秒
-
 1. ssh 连接到 nas
 2. 切换到 root:
 3. ```sudo -s```
